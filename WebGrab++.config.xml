@@ -12,11 +12,12 @@
   <logging>off</logging>
   <retry>4</retry>
   <skip>noskip</skip>
-  <timespan>4</timespan>
+  <timespan>3</timespan>
   <update>i</update>
  
   <!-- replace the next dummy channel entry with the channels you want -->
   <!-- see http://webgrabplus.com/node/94 for the available sites/channels -->
+<!--
                 <channel update="i" site="tvpassport.com" site_id="cbc-cbot-ottawa-on/49" xmltv_id="cbc-cbot-ottawa-on">CBC (CBOT) Ottawa, ON (4-1)</channel>
                 <channel update="i" site="tvpassport.com" site_id="src-cboft-ottawa-hd/6768" xmltv_id="src-cboft-ottawa-hd">SRC (CBOFT) Ottawa, ON HD (9-1)</channel>
                 <channel update="i" site="tvpassport.com" site_id="ctv-ottawa-cjoh-on-hd/7174" xmltv_id="ctv-ottawa-cjoh-on-hd">CTV (CJOH) Ottawa, ON HD (13-1)</channel>
@@ -25,6 +26,37 @@
                 <channel update="i" site="tvpassport.com" site_id="tva-chot-hull/4" xmltv_id="tva-chot-hull">TVA (CHOT) Hull (40)</channel>
                 <channel update="i" site="tvpassport.com" site_id="yes-tv-cits-burlington-on/293" xmltv_id="yes-tv-cits-burlington-on">Yes TV (CITS) Burlington, ON (42-1)</channel>
                 <channel update="i" site="tvpassport.com" site_id="ctv-two-ottawa-on/51" xmltv_id="ctv-two-ottawa-on">CTV Two Ottawa, ON (43-1)</channel>
+-->
+                <channel update="i" site="tvpassport.com" site_id="src-cbaft-moncton-nb/118" xmltv_id="ch12">SRC (CBAFT) Moncton, NB</channel>
+                <channel update="i" site="tvpassport.com" site_id="yoopa/7616" xmltv_id="ch16">YOOPA</channel>
+                <channel update="i" site="tvpassport.com" site_id="tva-cftm-montreal/5934" xmltv_id="ch17">TVA Montreal</channel>
+                <channel update="i" site="tvpassport.com" site_id="rdi-news/8" xmltv_id="ch19">RDI News</channel>
+                <channel update="i" site="tvpassport.com" site_id="global-ckmi-quebec" xmltv_id="ch25">Global Montreal</channel>
+                <channel update="i" site="tvpassport.com" site_id="ctv-montreal-cfcf-qc/50" xmltv_id="ch26">CTV (CFCF) Montreal</channel>
+                <channel update="i" site="tvpassport.com" site_id="src-cbft-montreal-qc/196" xmltv_id="ch27">SRC (CBFT) Montreal, QC</channel>
+                <channel update="i" site="tvpassport.com" site_id="src-cbvt-quebec-qc/562" xmltv_id="ch28">SRC (CBVT) Quebec, QC</channel>
+                <channel update="i" site="tvpassport.com" site_id="telequebec-civm-montreal-hd/6464" xmltv_id="ch29">Telequebec Montreal</channel>
+                <channel update="i" site="tvpassport.com" site_id="musique-plus/101" xmltv_id="ch30">Musique Plus</channel>
+                <channel update="i" site="tvpassport.com" site_id="artv/459" xmltv_id="ch31">ARTV</channel>
+		<channel offset="0" same_as="ch27" xmltv_id="ch32">SRC Montreal</channel>
+                <channel update="i" site="tvpassport.com" site_id="rds-reseau-des-sports-hd/5582" xmltv_id="ch33">RDS 1</channel>
+                <channel update="i" site="tvpassport.com" site_id="rds-2-hd/9970" xmltv_id="ch34">RDS 2</channel>
+                <channel update="i" site="tvpassport.com" site_id="tva-sports-hd/9824" xmltv_id="ch35">TVA Sports 1</channel>
+                <channel update="i" site="tvpassport.com" site_id="tva-sports-2-hd/13778" xmltv_id="ch36">TVA Sports 2</channel>
+                <channel update="i" site="tvpassport.com" site_id="tv5-international-east/23" xmltv_id="ch37">TV5</channel>
+                <channel update="i" site="tvpassport.com" site_id="vrak/48" xmltv_id="ch38">VRAK</channel>
+                <channel update="i" site="tvpassport.com" site_id="series/341" xmltv_id="ch41">Series HD</channel>
+                <channel update="i" site="tvpassport.com" site_id="historia/345" xmltv_id="ch42">Historia HD</channel>
+                <channel update="i" site="tvpassport.com" site_id="z/344" xmltv_id="ch43">ZTele</channel>
+                <channel update="i" site="tvpassport.com" site_id="addik-tv-hd/6059" xmltv_id="ch93">Addik TV</channel>
+                <channel update="i" site="tvpassport.com" site_id="prise-2/2848" xmltv_id="ch95">PRISE 2 HD</channel>
+		<channel update="i" site="virginmedia.com" site_id="france-24-en##9" xmltv_id="ch96">FRANCE24 (ENGLISH)</channel>
+<!--		<channel update="i" site="telez.fr" site_id="iTELE" xmltv_id="ch97">iTELE</channel> -->
+		<channel update="i" site="telerama.fr.index-only" site_id="226" xmltv_id="ch97">iTELE</channel>
+                <channel update="i" site="tvpassport.com" site_id="super-ecran-hd-1/5898" xmltv_id="ch380">Super Ecran HD 1</channel>
+                <channel update="i" site="tvpassport.com" site_id="super-ecran-hd-2/8459" xmltv_id="ch381">Super Ecran HD 2</channel>
+                <channel update="i" site="tvpassport.com" site_id="super-ecran-hd-3/9822" xmltv_id="ch382">Super Ecran HD 3</channel>
+
 
 		<channel update="i" site="tvpassport.com" site_id="tvo-tv-ontario-hd/8399" xmltv_id="ch2">TVO (TV Ontario) HD</channel>
 		<channel update="i" site="tvpassport.com" site_id="global-ciii-ontario-hd/4021" xmltv_id="ch3">Global (CIII) Ontario HD</channel>
@@ -33,7 +65,6 @@
 		<channel update="i" site="tvpassport.com" site_id="city-tv-toronto-on/42" xmltv_id="ch7">CITY TV Toronto, ON</channel>
 		<channel update="i" site="tvpassport.com" site_id="ctv-cfto-toronto-on/39" xmltv_id="ch8">CTV (CFTO) Toronto, ON</channel>
 		<channel update="i" site="tvpassport.com" site_id="chch-hamilton-on-hd/5870" xmltv_id="ch11">CHCH Hamilton, ON HD</channel>
-		<channel update="i" site="tvpassport.com" site_id="src-cbft-montreal-qc/196" xmltv_id="ch12">SRC (CBFT) Montreal, QC</channel>
 		<channel update="i" site="tvpassport.com" site_id="omni2-hd/3624" xmltv_id="ch14">OMNI.2 HD</channel>
 		<channel update="i" site="tvpassport.com" site_id="weather-network/419" xmltv_id="ch23">The Weather Network</channel>
 		<channel update="i" site="tvpassport.com" site_id="cp24-cablepulse-24-hd/10809" xmltv_id="ch24">CP24 (CablePulse 24) HD</channel>
@@ -53,15 +84,20 @@
 		<channel update="i" site="tvpassport.com" site_id="abc-kabc-los-angeles-ca/2589" xmltv_id="ch81">KABC HDTV (ABC)</channel>
 		<channel update="i" site="tvpassport.com" site_id="fox-kttv-los-angeles-ca/1949" xmltv_id="ch82">KTTV HDTV (FOX)</channel>
 		<channel update="i" site="tvpassport.com" site_id="cbs-kcbs-los-angeles-ca/2172" xmltv_id="ch84">KCBS HDTV (CBS)</channel>
-		<channel update="i" site="tvpassport.com" site_id="wgn-canada/4202" xmltv_id="ch85">WGN Canada</channel>
+<!--		<channel update="i" site="tvpassport.com" site_id="wgn-canada/4202" xmltv_id="ch85">WGN Canada</channel> -->
+<!-- cchalk corrected it for CW11 -->
+		<channel update="i" site="zap2it.com" site_id="11714&amp;channel=11&amp;aid=zap2it" xmltv_id="ch85">CW11 HD</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for PPV####" xmltv_id="ch100">PPV</channel>
 		<channel update="i" site="zap2it.com" site_id="11207&amp;channel=105&amp;aid=zap2it" xmltv_id="ch105">USA Network HDTV (East) (USAHD)</channel>
 		<channel update="i" site="zap2it.com" site_id="16123&amp;channel=106&amp;aid=zap2it" xmltv_id="ch106">TV Land HDTV (East) (TVLAND)</channel>
 		<channel update="i" site="tvpassport.com" site_id="comedy-network-east/159" xmltv_id="ch107">Comedy Network - East</channel>
 		<channel update="i" site="tvpassport.com" site_id="lifetime-tv-canada/1148" xmltv_id="ch108">Lifetime TV Canada</channel>
 		<channel update="i" site="zap2it.com" site_id="18480&amp;channel=109&amp;aid=zap2it" xmltv_id="ch109">LMN HDTV (East) (LMNHD)</channel>
 		<channel update="i" site="tvpassport.com" site_id="food-network-canada-hd/8389" xmltv_id="ch110">Food Network Canada HD</channel>
+		<channel update="i" site="tvpassport.com" site_id="do-it-yourself-network-usa-east/622" xmltv_id="ch111">DIY Network</channel>
 		<channel update="i" site="zap2it.com" site_id="49788&amp;channel=9461&amp;aid=zap2it" xmltv_id="ch112">Home &amp; Garden Television HDTV (East) (HGTVD)</channel>
 		<channel update="i" site="zap2it.com" site_id="61812&amp;channel=9474&amp;aid=zap2it" xmltv_id="ch114">E! Entertainment Television HDTV (East) (E! HD)</channel>
+		<channel update="i" site="tvpassport.com" site_id="peachtree-tv-canada" xmltv_id="ch115">Peachtree HD</channel>
 		<channel update="i" site="tvpassport.com" site_id="ae-canada/4311" xmltv_id="ch118">A&amp;E Canada</channel>
 		<channel update="i" site="tvpassport.com" site_id="history-canada-east/164" xmltv_id="ch120">History HDTV (East) (HISHD)</channel>
 		<channel update="i" site="zap2it.com" site_id="65732&amp;channel=121&amp;aid=zap2it" xmltv_id="ch121">VICELAND HDTV (VICE)</channel>
@@ -79,20 +115,26 @@
 		<channel update="i" site="zap2it.com" site_id="64492&amp;channel=135&amp;aid=zap2it" xmltv_id="ch135">BBC America HDTV (East) (BBC)</channel>
 		<channel update="i" site="zap2it.com" site_id="58574&amp;channel=9475&amp;aid=zap2it" xmltv_id="ch136">FX HDTV (FX HD)</channel>
 		<channel update="i" site="tvpassport.com" site_id="sundancetv-usa-east/1848" xmltv_id="ch137">Sundance TV</channel>
-		<channel update="i" site="zap2it.com" site_id="42642&amp;channel=138&amp;aid=zap2it" xmltv_id="ch138">Turner Network Television HDTV (East) (TNTHD)</channel>
+		<channel update="i" site="tvpassport.com" site_id="tnt-eastern-feed/347" xmltv_id="ch138">TNT</channel>
+<!--		<channel update="i" site="zap2it.com" site_id="11164&amp;channel=107&amp;aid=zap2it" xmltv_id="ch138">Turner Network Television HDTV (East) (TNTHD)</channel> -->
 		<channel update="i" site="zap2it.com" site_id="11867&amp;channel=139&amp;aid=zap2it" xmltv_id="ch139">TBS Superstation HDTV (East) (TBSHD)</channel>
 		<channel update="i" site="zap2it.com" site_id="32645&amp;channel=140&amp;aid=zap2it" xmltv_id="ch140">ESPN HDTV (ESPNHD)</channel>
 		<channel update="i" site="zap2it.com" site_id="12444&amp;channel=143&amp;aid=zap2it" xmltv_id="ch143">ESPN2 HDTV (ESPN2HD)</channel>
-		<channel update="i" site="tv.com" site_id="69026841" xmltv_id="ch145">Yankees Television HDTV (YESHD)</channel>
 		<channel update="i" site="zap2it.com" site_id="33178&amp;channel=397&amp;aid=zap2it" xmltv_id="ch149">Fox Sports 2 HDTV (FS2HD)</channel>
 		<channel update="i" site="zap2it.com" site_id="82541&amp;channel=150&amp;aid=zap2it" xmltv_id="ch150">Fox Sports 1 HDTV (FS1HD)</channel>
-		<channel update="i" site="zap2it.com" site_id="34710&amp;channel=154&amp;aid=zap2it" xmltv_id="ch153">The NFL Network HDTV (NFLHD)</channel>
+<!--		<channel update="i" site="tv.com" site_id="69026841" xmltv_id="ch151">Yankees Television HDTV (YESHD)</channel> -->
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for NFL Now####" xmltv_id="ch153">NFL Now</channel>
+		<channel update="i" site="tvpassport.com" site_id="nfl-network/3349" xmltv_id="ch152">NFL Network</channel>
 		<channel update="i" site="zap2it.com" site_id="91306&amp;channel=75&amp;aid=zap2it" xmltv_id="ch155">WWE Network HD</channel>
 		<channel update="i" site="zap2it.com" site_id="32281&amp;channel=156&amp;aid=zap2it" xmltv_id="ch156">NBA TV HDTV (NBA HD)</channel>
 		<channel update="i" site="zap2it.com" site_id="16365&amp;channel=158&amp;aid=zap2it" xmltv_id="ch158">CBS Sports Network HDTV (CBSSD)</channel>
 		<channel update="i" site="zap2it.com" site_id="15952&amp;channel=159&amp;aid=zap2it" xmltv_id="ch159">NBC Sports Network HDTV (NBCSN)</channel>
 		<channel update="i" site="zap2it.com" site_id="60964&amp;channel=160&amp;aid=zap2it" xmltv_id="ch160">MTV HDTV (East) (MTVHD)</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for M20####" xmltv_id="ch161">M20</channel>
 		<channel update="i" site="zap2it.com" site_id="11218&amp;channel=162&amp;aid=zap2it" xmltv_id="ch162">VH1 HDTV (East) (VH1HD)</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for VEVO####" xmltv_id="ch163">VEVO 1</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for VEVO####" xmltv_id="ch164">VEVO 2</channel>
+
 		<channel update="i" site="tvpassport.com" site_id="treehouse-hd/11285" xmltv_id="ch165">Treehouse HD</channel>
 		<channel update="i" site="zap2it.com" site_id="11006&amp;channel=170&amp;aid=zap2it" xmltv_id="ch170">Nickelodeon HDTV (East) (NICHD)</channel>
 		<channel update="i" site="tvpassport.com" site_id="family-channel-canada-east/53" xmltv_id="ch171">Family Channel Canada - East</channel>
@@ -110,24 +152,60 @@
 		<channel update="i" site="zap2it.com" site_id="16615&amp;channel=192&amp;aid=zap2it" xmltv_id="ch192">Investigation Discovery HDTV (IDHD)</channel>
 		<channel update="i" site="tvpassport.com" site_id="discovery-science-canada-hd/10769" xmltv_id="ch193">Discovery Science Canada HD</channel>
 		<channel update="i" site="zap2it.com" site_id="11180&amp;channel=196&amp;aid=zap2it" xmltv_id="ch196">Travel Channel HDTV (East) (TRAVD)</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for NHL on Versus####" xmltv_id="ch198">NHL on versus</channel>
 		<channel update="i" site="tvpassport.com" site_id="cnn-hd/4724" xmltv_id="ch200">Cable News Network HDTV (CNNHD)</channel>
 		<channel update="i" site="tvpassport.com" site_id="cbc-news-network/74" xmltv_id="ch201">CBC News Network</channel>
 		<channel update="i" site="zap2it.com" site_id="10145&amp;channel=202&amp;aid=zap2it" xmltv_id="ch202">HLN HDTV (HLNHD)</channel>
 		<channel update="i" site="zap2it.com" site_id="87916&amp;channel=203&amp;aid=zap2it" xmltv_id="ch203">Bloomberg in HDTV (BTVHD)</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:ABC News##subtitle:All day news##description:24h schedule##category:news####" xmltv_id="ch204">ABC News</channel>
 		<channel update="i" site="tvpassport.com" site_id="fox-news/1083" xmltv_id="ch205">Fox News Channel HDTV (FNCHD)</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:RT News##subtitle:All day news##description:24h schedule##category:news####" xmltv_id="ch206">RT News</channel>
 		<channel update="i" site="filmon.com" site_id="1981" xmltv_id="ch207">RT Documentary</channel>
 		<channel update="i" site="zap2it.com" site_id="58780&amp;channel=208&amp;aid=zap2it" xmltv_id="ch208">Consumer News &amp; Business Channel HDTV (CNBCH)</channel>
 		<channel update="i" site="zap2it.com" site_id="64241&amp;channel=5498&amp;aid=zap2it" xmltv_id="ch209">MSNBC HDTV (MSNBCH)</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:CBS News##subtitle:All day news##description:24h schedule##category:news####" xmltv_id="ch210">CBS News</channel>
 		<channel update="i" site="tvpassport.com" site_id="bnn-business-news-network/294" xmltv_id="ch212">BNN - Business News Network</channel>
 		<channel update="i" site="zap2it.com" site_id="11187&amp;channel=214&amp;aid=zap2it" xmltv_id="ch214">The Weather Channel HDTV (WEAHD)</channel>
 		<channel update="i" site="virginmedia.com" site_id="bbc-news-hd##9" xmltv_id="ch215">BBC NEWS HD</channel>
 		<channel update="i" site="zap2it.com" site_id="29114&amp;channel=279&amp;aid=zap2it" xmltv_id="ch216">CCTV NEWS (NEWS)</channel>
 		<channel update="i" site="tvpassport.com" site_id="al-jazeera-english/7810" xmltv_id="ch217">Al Jazeera</channel>
+		<channel update="i" site="tvpassport.com" site_id="deutsche-welle-tv/426" xmltv_id="ch218">DW</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NFL Sunday Ticket can be provided####" xmltv_id="ch221">NFL Sunday Ticket 1</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NFL Sunday Ticket can be provided####" xmltv_id="ch222">NFL Sunday Ticket 2</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NFL Sunday Ticket can be provided####" xmltv_id="ch223">NFL Sunday Ticket 3</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NFL Sunday Ticket can be provided####" xmltv_id="ch224">NFL Sunday Ticket 4</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NFL Sunday Ticket can be provided####" xmltv_id="ch225">NFL Sunday Ticket 5</channel>
+
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NHL Centre Ice can be provided####" xmltv_id="ch227">NHL Centre Ice 1</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NHL Centre Ice can be provided####" xmltv_id="ch228">NHL Centre Ice 2</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NHL Centre Ice can be provided####" xmltv_id="ch229">NHL Centre Ice 3</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NHL Centre Ice can be provided####" xmltv_id="ch230">NHL Centre Ice 4</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NHL Centre Ice can be provided####" xmltv_id="ch231">NHL Centre Ice 5</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No reliable EPG for NHL Centre Ice can be provided####" xmltv_id="ch232">NHL Centre Ice 6</channel>
+<!--
+		<channel update="i" site="zap2it.com" site_id="17679&amp;channel=705&amp;aid=zap2it" xmltv_id="ch221">NFL Sunday Ticket 1</channel>
+		<channel update="i" site="zap2it.com" site_id="17680&amp;channel=706&amp;aid=zap2it" xmltv_id="ch222">NFL Sunday Ticket 2</channel>
+		<channel update="i" site="zap2it.com" site_id="17681&amp;channel=707&amp;aid=zap2it" xmltv_id="ch223">NFL Sunday Ticket 3</channel>
+		<channel update="i" site="zap2it.com" site_id="17682&amp;channel=708&amp;aid=zap2it" xmltv_id="ch224">NFL Sunday Ticket 4</channel>
+		<channel update="i" site="zap2it.com" site_id="17683&amp;channel=709&amp;aid=zap2it" xmltv_id="ch225">NFL Sunday Tciket 5</channel>
+		<channel update="i" site="zap2it.com" site_id="50135&amp;channel=769&amp;aid=zap2it" xmltv_id="ch227">NHL Centre Ice 1</channel>
+		<channel update="i" site="zap2it.com" site_id="50137&amp;channel=771&amp;aid=zap2it" xmltv_id="ch228">NHL Centre Ice 2</channel>
+		<channel update="i" site="zap2it.com" site_id="50139&amp;channel=773&amp;aid=zap2it" xmltv_id="ch229">NHL Centre Ice 3</channel>
+		<channel update="i" site="zap2it.com" site_id="84348&amp;channel=775&amp;aid=zap2it" xmltv_id="ch230">NHL Centre Ice 4</channel>
+		<channel update="i" site="zap2it.com" site_id="83059&amp;channel=777&amp;aid=zap2it" xmltv_id="ch231">NHL Centre Ice 5</channel>
+		<channel update="i" site="zap2it.com" site_id="83061&amp;channel=779&amp;aid=zap2it" xmltv_id="ch232">NHL Centre Ice 6</channel>
+-->		
 
 		<channel update="i" site="zap2it.com" site_id="59186&amp;channel=241&amp;aid=zap2it" xmltv_id="ch241">Spike TV HDTV (East) (SPKHD)</channel>
 		<channel update="i" site="zap2it.com" site_id="10153&amp;channel=148&amp;aid=zap2it" xmltv_id="ch242">truTV HDTV (East) (TRUTVD)</channel>
 		<channel update="i" site="zap2it.com" site_id="31046&amp;channel=246&amp;aid=zap2it" xmltv_id="ch246">Velocity HDTV (VELOCITY)</channel>
 		<channel update="i" site="zap2it.com" site_id="73067&amp;aid=zap2it" xmltv_id="ch270">Bounce TV</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for WIN TV####" xmltv_id="ch271">WIN TV</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for CEEN TV####" xmltv_id="ch272">CEEN TV</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for Virgin TV####" xmltv_id="ch280">Virgin TV</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for Radio 105####" xmltv_id="ch281">Radio 105</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for Radio Montecarlo####" xmltv_id="ch282">Radio Montecarlo</channel>
+
 		<channel update="i" site="zap2it.com" site_id="10269&amp;channel=222&amp;aid=zap2it" xmltv_id="ch290">Home Shopping Network (HSN)</channel>
 		<channel update="i" site="zap2it.com" site_id="10270&amp;channel=226&amp;aid=zap2it" xmltv_id="ch291">HSN2</channel>
 		<channel update="i" site="zap2it.com" site_id="10240&amp;channel=300&amp;aid=zap2it" xmltv_id="ch300">HBO HDTV (East) (HBOHD)</channel>
@@ -153,6 +231,12 @@
 		<channel update="i" site="tvpassport.com" site_id="movietime/464" xmltv_id="ch362">MovieTime</channel>
 		<channel update="i" site="zap2it.com" site_id="26769&amp;channel=74&amp;aid=zap2it" xmltv_id="ch363">Showcase Action</channel>
 		<channel update="i" site="zap2it.com" site_id="76942&amp;channel=392&amp;aid=zap2it" xmltv_id="ch392">beIN Sports HDTV (Spanish) (BEINHD)</channel>
+		<channel update="i" site="zap2it.com" site_id="34313&amp;channel=310&amp;aid=zap2it" xmltv_id="ch400">TSN1 HD</channel>
+		<channel update="i" site="zap2it.com" site_id="61474&amp;channel=311&amp;aid=zap2it" xmltv_id="ch401">TSN2 HD</channel>
+		<channel update="i" site="zap2it.com" site_id="90119&amp;channel=600&amp;aid=zap2it" xmltv_id="ch402">TSN3 HD</channel>
+		<channel update="i" site="zap2it.com" site_id="90123&amp;channel=599&amp;aid=zap2it" xmltv_id="ch403">TSN4 HD</channel>
+		<channel update="i" site="zap2it.com" site_id="90125&amp;channel=598&amp;aid=zap2it" xmltv_id="ch404">TSN5 HD</channel>
+<!--
 		<channel update="i" site="tvpassport.com" site_id="tsn1-hd/2819" xmltv_id="ch400">TSN1 HD</channel>
 		<channel update="i" site="tvpassport.com" site_id="tsn2-hd/5920" xmltv_id="ch401">TSN2 HD</channel>
 		<channel update="i" site="tvpassport.com" site_id="tsn3-hd/13768" xmltv_id="ch402">TSN3 HD</channel>
@@ -162,6 +246,12 @@
 		<channel update="i" site="tvpassport.com" site_id="sportsnet-ontario-hd/6044" xmltv_id="ch406">Sportsnet (Ontario) HD</channel>
 		<channel update="i" site="tvpassport.com" site_id="sportsnet-360-hd/3614" xmltv_id="ch407">Sportsnet 360 HD</channel>
 		<channel update="i" site="tvpassport.com" site_id="sportsnet-world/4442" xmltv_id="ch408">Sportsnet World</channel>
+-->
+		<channel update="i" site="zap2it.com" site_id="68859&amp;channel=607&amp;aid=zap2it" xmltv_id="ch405">Sportsnet One</channel>
+		<channel update="i" site="zap2it.com" site_id="62111&amp;channel=604&amp;aid=zap2it" xmltv_id="ch406">Sportsnet Ontario</channel>
+		<channel update="i" site="zap2it.com" site_id="49952&amp;channel=608&amp;aid=zap2it" xmltv_id="ch407">Sportsnet 360</channel>
+		<channel update="i" site="zap2it.com" site_id="57735&amp;channel=133&amp;aid=zap2it" xmltv_id="ch408">Sportsnet World</channel>
+
 		<channel update="i" site="zap2it.com" site_id="33395&amp;channel=400&amp;aid=zap2it" xmltv_id="ch410">Tennis Channel HDTV (TNNSHD)</channel>
 		<channel update="i" site="zap2it.com" site_id="14899&amp;channel=401&amp;aid=zap2it" xmltv_id="ch412">The Golf Channel HDTV (GLFHD)</channel>
 		<channel update="i" site="virginmedia.com" site_id="box-nation##9" xmltv_id="ch420">Box Nation</channel>
@@ -171,29 +261,37 @@
 		<channel update="i" site="virginmedia.com" site_id="bt-sport-3-hd##9" xmltv_id="ch424">BT Sports 3HD</channel>
 		<channel update="i" site="astro.com.my" site_id="82" xmltv_id="ch425">Astro SuperSport 1</channel>
 		<channel update="i" site="astro.com.my" site_id="11" xmltv_id="ch426">Astro SuperSport 2</channel>
+		<channel update="i" site="tvpassport.com" site_id="fight-network-canada/3433" xmltv_id="ch427">Fight Network</channel>
 		<channel update="i" site="startv.com" site_id="Star Sports HD 1" xmltv_id="ch432">Star Sports HD 1</channel>
 		<channel update="i" site="startv.com" site_id="Star Sports HD 2" xmltv_id="ch433">Star Sports HD 2</channel>
 		<channel update="i" site="startv.com" site_id="Star Sports HD 3" xmltv_id="ch434">Star Sports HD 3</channel>
 		<channel update="i" site="startv.com" site_id="Star Sports HD 4" xmltv_id="ch435">Star Sports HD 4</channel>
-		<channel update="i" site="sportklubtv.si" site_id="1" xmltv_id="ch436">SK1</channel>
-		<channel update="i" site="sportklubtv.si" site_id="2" xmltv_id="ch437">SK2</channel>
-		<channel update="i" site="sportklubtv.si" site_id="3" xmltv_id="ch438">SK3</channel>
+		<channel update="i" site="mojtv.hr" site_id="62/sk1" xmltv_id="ch436">SK1</channel>
+		<channel update="i" site="mojtv.hr" site_id="63/sk2" xmltv_id="ch437">SK2</channel>
+		<channel update="i" site="mojtv.hr" site_id="296/sk3" xmltv_id="ch438">SK3</channel>
 		<channel update="i" site="sky.de" site_id="118" xmltv_id="ch439">Sky Bundesliga HD 1</channel>
 		<channel update="i" site="t-home.mk" site_id="157" xmltv_id="ch440">ARENA SPORTS 1</channel>
 		<channel update="i" site="t-home.mk" site_id="158" xmltv_id="ch441">ARENA SPORTS 2</channel>
 		<channel update="i" site="t-home.mk" site_id="159" xmltv_id="ch442">ARENA SPORTS 3</channel>
 		<channel update="i" site="t-home.mk" site_id="160" xmltv_id="ch443">ARENA SPORTS 4</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for Super Sports####" xmltv_id="ch445">Super Sports 1</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for Super Sports####" xmltv_id="ch446">Super Sports 2</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for Super Sports####" xmltv_id="ch447">Super Sports 3</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:No information for Super Sports####" xmltv_id="ch448">Super Sports 4</channel>
 		<channel update="i" site="zap2it.com" site_id="58570&amp;channel=157&amp;aid=zap2it" xmltv_id="ch475">NHL Network US HDTV (NHLHD)</channel>
+		<channel update="i" site="zap2it.com" site_id="76898&amp;channel=589&amp;aid=zap2it" xmltv_id="ch488">Playboy</channel>
+		<channel update="i" site="zap2it.com" site_id="68529&amp;channel=588&amp;aid=zap2it" xmltv_id="ch496">Hustler</channel>
+<!--
 		<channel update="i" site="directv.com" site_id="576" xmltv_id="ch488">Playboy</channel>
 		<channel update="i" site="directv.com" site_id="598" xmltv_id="ch492">Vivid TV</channel>
 		<channel update="i" site="directv.com" site_id="599" xmltv_id="ch496">Hustler HD</channel>
-<!--
 		<channel update="i" site="tv.sky.com" site_id="3720" xmltv_id="ch498">Venus TV</channel>
 -->
 		<channel update="i" site="virginmedia.com" site_id="alibi##9" xmltv_id="ch501">Alibi</channel>
 		<channel update="i" site="virginmedia.com" site_id="animal-planet-hd##9" xmltv_id="ch502">Animal Planet HD</channel>
 		<channel update="i" site="virginmedia.com" site_id="bbc-one-hd##9" xmltv_id="ch504">BBC ONE HD</channel>
 		<channel update="i" site="virginmedia.com" site_id="nollywood-movies##9" xmltv_id="ch505">Nollywood Movies</channel>
+		<channel update="f" site="fixed" site_id="00:00-23:59##title:Off air####" xmltv_id="ch506">BBC Three</channel>
 		<channel update="i" site="virginmedia.com" site_id="bbc-two-hd##9" xmltv_id="ch507">BBC TWO HD</channel>
 		<channel update="i" site="tv.sky.com" site_id="3208" xmltv_id="ch508">UK BEN</channel>
 		<channel update="i" site="virginmedia.com" site_id="comedy-central##9" xmltv_id="ch509">Comedy Central</channel>
@@ -227,6 +325,8 @@
 		<channel update="i" site="virginmedia.com" site_id="sky-sports-4-hd##9" xmltv_id="ch545">Sky Sports 4 HD</channel>
 		<channel update="i" site="virginmedia.com" site_id="sky-sports-5-hd##9" xmltv_id="ch546">Sky Sports 5 HD</channel>
 		<channel update="i" site="virginmedia.com" site_id="watch-hd##9" xmltv_id="ch550">W HD</channel>
+		<channel update="i" site="mojtv.hr" site_id="164/rete-4" xmltv_id="ch627">RETE 4 HD</channel>
+
 <!--
 		<channel update="i" site="tvpassport.com" site_id="telelatino/82" xmltv_id="ch600">TLN</channel>
 		<channel update="i" site="guidatv.sky.it" site_id="##id=122##_##icon_file=122_home.png" xmltv_id="ch604">FOX IT</channel>
@@ -247,39 +347,42 @@
 		<channel update="i" site="tatasky.com" site_id="483" xmltv_id="ch718">Sony Six</channel>
 		<channel update="i" site="tatasky.com" site_id="485" xmltv_id="ch722">Sony ESPN</channel>
 
-<!--
-		<channel update="i" site="tv.com" site_id="69024150" xmltv_id="ch825">AZTECA</channel>
-		<channel update="i" site="tv.com" site_id="69047006" xmltv_id="ch827">UNIVISION EAST HD</channel>
-		<channel update="i" site="tv.com" site_id="69032931" xmltv_id="ch828">UNIVISION WEST</channel>
+		<channel update="i" site="tvpassport.com" site_id="azteca-america-east/2142" xmltv_id="ch825">AZTECA</channel>
+		<channel update="i" site="tvpassport.com" site_id="univision-eastern-feed/1305" xmltv_id="ch827">UNIVISION EAST HD</channel>
+		<channel update="i" site="tvpassport.com" site_id="univision-pacific-feed/1306" xmltv_id="ch828">UNIVISION WEST</channel>
 		<channel update="i" site="elpais.com" site_id="589" xmltv_id="ch829">CANAL DE LAS ESTRELLAS</channel>
-		<channel update="i" site="tv.com" site_id="69025353" xmltv_id="ch830">UNIMAS HD</channel>
+		<channel update="i" site="tvpassport.com" site_id="unimas-network-pacific/17006" xmltv_id="ch830">UNIMAS HD</channel>
 		<channel update="i" site="tv.com" site_id="69037723" xmltv_id="ch832">CENTRO AMERICA TV</channel>
-		<channel update="i" site="tv.com" site_id="69029166" xmltv_id="ch833">GALAVISION</channel>
+		<channel update="i" site="tvpassport.com" site_id="galavision-eastern-feed/1894" xmltv_id="ch833">GALAVISION</channel>
 		<channel update="i" site="tv.com" site_id="69037592" xmltv_id="ch834">PASIONES</channel>
-		<channel update="i" site="tv.com" site_id="69030572" xmltv_id="ch835">TELEMUNDO HD EAST</channel>
-		<channel update="i" site="tv.com" site_id="69046851" xmltv_id="ch836">TELEMUNDO WEST</channel>
+		<channel update="i" site="tvpassport.com" site_id="telemundo-eastern-feed/1521" xmltv_id="ch835">TELEMUNDO HD EAST</channel>
+		<channel update="i" site="tvpassport.com" site_id="telemundo-pacific-feed/2013" xmltv_id="ch836">TELEMUNDO WEST</channel>
 		<channel update="i" site="tv.com" site_id="314530379" xmltv_id="ch837">TLNOVELAS</channel>
-		<channel update="i" site="tv.com" site_id="69046887" xmltv_id="ch838">NBC UNIVERSO</channel>
+		<channel update="i" site="tvpassport.com" site_id="nbc-universo-eastern-feed/1797" xmltv_id="ch838">NBC UNIVERSO</channel>
+		<channel update="i" site="zap2it.com" site_id="16217&amp;channel=840&amp;aid=zap2it" xmltv_id="ch840">TVEI</channel>
+		<channel update="i" site="zap2it.com" site_id="33431&amp;channel=841&amp;aid=zap2it" xmltv_id="ch841">NUESTRT</channel>
 		<channel update="i" site="tv.com" site_id="69023927" xmltv_id="ch842">CARACOL</channel>
 		<channel update="i" site="tv.com" site_id="69030284" xmltv_id="ch844">TELE DOMINICANA</channel>
-		<channel update="i" site="tv.com" site_id="69046934" xmltv_id="ch845">Discovery HD ES</channel>
+		<channel update="i" site="tvpassport.com" site_id="discovery-en-espanol/2073" xmltv_id="ch845">DISCOVERY HD ES</channel>
 		<channel update="i" site="tv.com" site_id="69025989" xmltv_id="ch850">History ES</channel>
 		<channel update="i" site="tv.com" site_id="69032950" xmltv_id="ch851">MEGA HD</channel>
-		<channel update="i" site="tv.com" site_id="69047761" xmltv_id="ch852">TV Chile</channel>
-		<channel update="i" site="tv.com" site_id="69040139" xmltv_id="ch854">ESPN Deportes</channel>
-		<channel update="i" site="tv.com" site_id="603924316" xmltv_id="ch855">Fox Deportes</channel>
+		<channel update="i" site="tvpassport.com" site_id="tv-chile/2102" xmltv_id="ch852">TV CHILE</channel>
+		<channel update="i" site="zap2it.com" site_id="73812&amp;channel=842&amp;aid=zap2it" xmltv_id="ch853">FOXLFUS</channel>
+		<channel update="i" site="tvpassport.com" site_id="espn-deportes/2108" xmltv_id="ch854">ESPN DEPORTES</channel>
+		<channel update="i" site="tvpassport.com" site_id="fox-deportes/1827" xmltv_id="ch855">FOX DEPORTES</channel>
 		<channel update="i" site="tv.com" site_id="69034433" xmltv_id="ch857">Ecua TV</channel>
-		<channel update="i" site="tv.com" site_id="69046973" xmltv_id="ch859">CNN ES</channel>
+		<channel update="i" site="tvpassport.com" site_id="tyc-sports/4578" xmltv_id="ch858">TYC SPORTS ARGENTINA</channel>
+		<channel update="i" site="tvpassport.com" site_id="cnn-espanol/2096" xmltv_id="ch859">CNN ES</channel>
 		<channel update="i" site="tv.com" site_id="69030246" xmltv_id="ch861">TV Venezuela</channel>
 		<channel update="i" site="tv.com" site_id="69046812" xmltv_id="ch862">DE PELICULA</channel>
 		<channel update="i" site="tv.com" site_id="69024616" xmltv_id="ch863">DE PELICULA CLASICO</channel>
 		<channel update="i" site="tv.com" site_id="752281558" xmltv_id="ch864">CINE SONY</channel>
-		<channel update="i" site="tv.com" site_id="287899085" xmltv_id="ch869">UNIVISION DEPORTES</channel>
-		<channel update="i" site="tv.com" site_id="69023694" xmltv_id="ch870">GOL TV ES</channel>
-		<channel update="i" site="tv.com" site_id="305596635" xmltv_id="ch873">BEIN DEPORTES HD</channel>
-		<channel update="i" site="tv.com" site_id="69041002" xmltv_id="ch880">PERU MAGICAL</channel>
-		<channel update="i" site="tv.com" site_id="69030245" xmltv_id="ch882">Sur Peru</channel>
--->
+		<channel update="i" site="tvpassport.com" site_id="spectrum-deportes/10807" xmltv_id="ch865">CINEMAX ES</channel>
+		<channel update="i" site="tvpassport.com" site_id="uni-deportes/11145" xmltv_id="ch869">UNIVISION DEPORTES</channel>
+		<channel update="i" site="tvpassport.com" site_id="gol-tv-usa/11505" xmltv_id="ch870">GOL TV ES</channel>
+		<channel update="i" site="tvpassport.com" site_id="bein-sport-en-espanol/10855" xmltv_id="ch873">BEIN DEPORTES HD</channel>
+		<channel update="i" site="tvpassport.com" site_id="peru-magico/18869" xmltv_id="ch880">PERU MAGICAL</channel>
+
 		<channel update="i" site="tvpassport.com" site_id="fairchild-tv-east/2871" xmltv_id="ch900">Fairchild TV - East</channel>
 		<channel update="i" site="tvpassport.com" site_id="fairchild-tv-2/11397" xmltv_id="ch901">Fairchild 2</channel>
 		<channel update="i" site="tvpassport.com" site_id="fairchild-tv-pacific/366" xmltv_id="ch902">Fairchild TV - Pacific</channel>
@@ -303,60 +406,17 @@
 		<channel update="i" site="tv.cntv.cn" site_id="zhejiang" xmltv_id="ch925">æµ™æ±Ÿå«è§†</channel>
 		<channel update="i" site="tv.cntv.cn" site_id="dongfang" xmltv_id="ch926">ä¸œæ–¹å«è§†</channel>
 		<channel update="i" site="tv.cntv.cn" site_id="guangdong" xmltv_id="ch927">å¹¿ä¸œå«è§†</channel>
-<!--
-		<channel update="i" site="tv.cntv.cn" site_id="travel" xmltv_id="ch927">æ—…æ¸¸å«è§†</channel>
-		<channel update="i" site="nowtv.now.com" site_id="543" xmltv_id="ch928">å»£æ±å—æ–¹è¡›è¦–</channel>
-		<channel update="i" site="tv.cntv.cn" site_id="shandong" xmltv_id="ch930">å±±æ±è¡›è¦–</channel>
-		<channel update="i" site="epg.i-cable.com.chinese" site_id="039" xmltv_id="ch931">å®‰å¾½è¡›è¦–</channel>
-		<channel update="i" site="tv.cntv.cn" site_id="tianjin" xmltv_id="ch933">å¤©æ´¥è¡›è¦–</channel>
-		<channel update="i" site="nowtv.now.com" site_id="543" xmltv_id="ch934">æ¾³äºžè¡›è¦– MASTV</channel>
-		<channel update="i" site="tv.cntv.cn" site_id="xiamen" xmltv_id="ch938">åŽ¦é—¨å«è§†</channel>
+		<channel offset="0" same_as="ch903" xmltv_id="ch941">TVB Pearl on Phoenix</channel>
 
-		<channel update="i" site="tv.com" site_id="382450716" xmltv_id="ch950">Saigon Broadcasting Television Network (SBTN)</channel>
-		<channel update="i" site="tv.com" site_id="333291968" xmltv_id="ch953">Vietface</channel>
-		<channel update="i" site="filmon.com" site_id="2936" xmltv_id="ch956">VTC10</channel>
-		<channel update="i" site="tv.com" site_id="69045479" xmltv_id="ch957">LITTLE SAIGON TV</channel>
-
--->
 		<channel update="i" site="foxtel.com.au" site_id="SRA##region=12352##" xmltv_id="ch994">SKY Racing</channel>
 		<channel update="i" site="foxtel.com.au" site_id="F1D##region=12352##" xmltv_id="ch995">Fox Sports 1 HD AUS</channel>
 		<channel update="i" site="foxtel.com.au" site_id="SPE##region=12352##" xmltv_id="ch996">Fox Sports 5 HD AUS</channel>
 		<channel update="i" site="foxtel.com.au" site_id="F2D##region=12352##" xmltv_id="ch997">Fox Sports 2 HD AUS</channel>
 		<channel update="i" site="zap2it.com" site_id="59155&amp;channel=6&amp;aid=zap2it" xmltv_id="ch998">NHK World</channel>
-		<channel update="i" site="epg.i-cable.com.chinese" site_id="076" xmltv_id="ch999">Channel News Asia</channel>
-<!--
-<channel update="i" site="filmon.com" site_id="2" xmltv_id="Channel 4 ">Channel 4</channel>
-<channel update="i" site="filmon.com" site_id="22" xmltv_id="Channel 5">Channel 5</channel>
-<channel update="i" site="filmon.com" site_id="11" xmltv_id="ITV">ITV</channel>
-<channel update="i" site="filmon.com" site_id="67" xmltv_id="ITV2">ITV2</channel>
-<channel update="i" site="filmon.com" site_id="2707" xmltv_id="QUEST">QUEST</channel>
-<channel update="i" site="filmon.com" site_id="65" xmltv_id="E4">E4</channel>
-<channel update="i" site="filmon.com" site_id="1039" xmltv_id="Yesterday">Yesterday</channel>
-<channel update="i" site="filmon.com" site_id="1808" xmltv_id="CBS Reality">CBS Reality</channel>
-<channel update="i" site="filmon.com" site_id="1805" xmltv_id="CBS Drama">CBS Drama</channel>
-<channel update="i" site="filmon.com" site_id="26" xmltv_id="ITV3">ITV3</channel>
-<channel update="i" site="filmon.com" site_id="101" xmltv_id="ITV4">ITV4</channel>
-<channel update="i" site="filmon.com" site_id="851" xmltv_id="5*">5*</channel>
-<channel update="i" site="filmon.com" site_id="97" xmltv_id="More4">More4</channel>
-<channel update="i" site="filmon.com" site_id="372" xmltv_id="Really">Really</channel>
-<channel update="i" site="filmon.com" site_id="845" xmltv_id="5USA">5USA</channel>
-<channel update="i" site="filmon.com" site_id="371" xmltv_id="Pick TV">Pick TV</channel>
-<channel update="i" site="filmon.com" site_id="3062" xmltv_id="The Outdoor Cooking Channel">The Outdoor Cooking Channel</channel>
-<channel update="i" site="filmon.com" site_id="3107" xmltv_id="Wineram TV">Wineram TV</channel>
-<channel update="i" site="filmon.com" site_id="3164" xmltv_id="World of Wine">World of Wine</channel>
-<channel update="i" site="filmon.com" site_id="1829" xmltv_id="Food Network+1">Food Network+1</channel>
-<channel update="i" site="filmon.com" site_id="2915" xmltv_id="Dude Food">Dude Food</channel>
-<channel update="i" site="filmon.com" site_id="20" xmltv_id="Food Network">Food Network</channel>
-<channel update="i" site="filmon.com" site_id="2918" xmltv_id="iFood TV">iFood TV</channel>
-<channel update="i" site="filmon.com" site_id="2921" xmltv_id="Indian Recipes">Indian Recipes</channel>
-<channel update="i" site="filmon.com" site_id="3002" xmltv_id="Wine Oh TV">Wine Oh TV</channel>
-<channel update="i" site="filmon.com" site_id="3005" xmltv_id="Gastrolab">Gastrolab</channel>
-<channel update="i" site="filmon.com" site_id="1213" xmltv_id="Simply Ming Video Podcast">Simply Ming Video Podcast</channel>
-<channel update="i" site="filmon.com" site_id="1212" xmltv_id="Cooking Everything Outdoors">Cooking Everything Outdoors</channel>
-<channel update="i" site="filmon.com" site_id="1217" xmltv_id="PCC Natural Markets Videos">PCC Natural Markets Videos</channel>
-<channel update="i" site="filmon.com" site_id="1218" xmltv_id="GrapeRadio \u2013 Wine Talk Show">GrapeRadio \u2013 Wine Talk Show</channel>
-<channel update="i" site="filmon.com" site_id="263" xmltv_id="Wine Channel TV">Wine Channel TV</channel>
-<channel update="i" site="filmon.com" site_id="1219" xmltv_id="Start Cooking">Start Cooking</channel>
-<channel update="i" site="filmon.com" site_id="710" xmltv_id="Eco-Rico">Eco-Rico</channel>
--->
+		<channel update="i" site="epg.i-cable.com" site_id="076" xmltv_id="ch999">Channel News Asia</channel>
+		<channel update="i" site="pokercentral.com" site_id="NOTUSED" xmltv_id="ch1074">Poker Central</channel>
+		<channel update="i" site="tvpassport.com" site_id="fight-network-canada/3433" xmltv_id="ch1082">Fight Network</channel>
+		<channel update="i" site="kombatsport.lu" site_id="kombat-sport" xmltv_id="ch1083">Kombat Sport</channel>
+		<channel update="i" site="virginmedia.com" site_id="motors-tv##9" xmltv_id="ch1090">MOTORS TV</channel>
+
 </settings>
