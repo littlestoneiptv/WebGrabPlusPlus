@@ -1,0 +1,219 @@
+#!/usr/bin/perl -w
+
+=pod
+
+=head1 NAME
+
+tv_grab_uk_sky - Grab TV listings for the United Kingdom, from the online Sky EPG
+
+=head1 SYNOPSIS
+
+tv_grab_uk_sky --help
+
+tv_grab_uk_sky [--config-file FILE] --configure [--gui OPTION]
+
+tv_grab_uk_sky [--config-file FILE] [--output FILE] [--quiet]
+                [--days N] [--offset N]
+
+=head1 DESCRIPTION
+
+Output TV and radio listings in XMLTV format for many stations
+available the UK. The data comes from the sky.com JSON web service,
+which was documented by mrmt32 at 
+http://www.digitalspy.co.uk/forums/showthread.php?p=24814269
+
+=head1 USAGE
+
+First you must run B<tv_grab_uk_sky --configure> to choose which
+stations you want to receive.  Then running B<tv_grab_uk_sky> with no
+arguments will get about a week<39>s listings for the stations
+you chose.
+
+B<--configure> Prompt for which stations to download and write the
+configuration file.
+
+B<--gui OPTION> Use this option to enable a graphical interface to be used.
+OPTION may be 'Tk', or left blank for the best available choice.
+Additional allowed values of OPTION are 'Term' for normal terminal output
+(default) and 'TermNoProgressBar' to disable the use of Term::ProgressBar.
+
+B<--config-file FILE> Set the name of the configuration file, the
+default is B<~/.xmltv/tv_grab_uk_sky.conf>.  This is the file written by
+B<--configure> and read when grabbing.
+
+B<--output FILE> When grabbing, write output to FILE rather than
+standard output.
+
+B<--days N> When grabbing, grab N days rather than as many as
+possible.
+
+B<--offset N> Start grabbing at today + N.  N may be negative.
+
+B<--quiet> Suppress the progress messages normally written to standard
+error.
+
+B<--version> Show the version of the grabber.
+
+B<--help> Print a help message and exit.
+
+=head1 SEE ALSO
+
+L<xmltv(5)>, L<http://tv.sky.com/>
+
+=head1 AUTHOR
+
+James Smith, james@floppy.org.uk
+
+=cut
+
+use strict;
+use XMLTV::Options qw/ParseOptions/;
+use XMLTV::Configure::Writer;
+use LWP::Simple qw/get/;
+use JSON;
+use HTML::Entities;
+use DateTime;
+use Encode;
+
+my( $opt, $conf ) = ParseOptions( { 
+  grabber_name => "tv_grab_uk_sky",
+  capabilities => [qw/baseline manualconfig apiconfig/],
+  stage_sub => \&config_stage,
+  listchannels_sub => \&list_channels,
+  version => '$Id: tv_grab_uk_sky.in,v 1.1 2009/06/21 Exp $',
+  description => "",
+} );
+
+# How many days are we going to grab data for?
+my $days = $opt->{days};
+my $offset = $opt->{offset};
+my $last_day = $offset + $days;
+if ($last_day > 6) { $last_day = 6 }
+
+# Channel and programme storage hashes
+my %channels = ();
+my %programmes = ();
+
+# For each channel
+foreach my $channel (@{$conf->{channel}})
+{
+  for (my $grab_offset = $offset; $grab_offset < $last_day; $grab_offset += 2)
+  {
+	  # channels=6000,1235		Comma seperated list of up to 20 channel ids
+	  my $time = DateTime->now(time_zone => 'Europe/London');
+    $time = $time->add( days => $grab_offset );
+    my $timestr = $time->strftime("%Y%m%d%H%M");          # Time and date in YYYYMMDDhhmm format
+	  my $dur = $last_day - $grab_offset < 2 ? 1440 : 2880; # Length of data to fetch in minutes (2880 max - 2 days)
+	  my $detail = 2;                                       # 2 gives full epg data with descriptions, any other number gives no desc.
+      my $url = "http://epgservices.sky.com/tvlistings-proxy/TVListingsProxy/tvlistings.json?channels=$channel&dur=$dur&detail=$detail&time=$timestr";
+	  my $res = get($url);
+	  $res =~ s/""$//g;
+	  if (length($res) > 0)
+	  {
+	    my $channel_data = JSON::XS->new->decode (decode "UTF-8", $res);
+	    # Store channel information
+      foreach my $x ($channel_data->{channels})
+      {
+        my $channelid = $x->{channelid};
+        my @program = @{$x->{program}};
+        # Filter out any programmes that started the day before this grab was for, so that we avoid duplication
+        @program = grep {
+	        my $start = $_->{start};
+	        $start = substr($start,0,length($start)-3);  # Need to chop trailing 000 off the end
+	        $start = DateTime->from_epoch(epoch => $start, time_zone => 'Europe/London');
+          $start > $time;
+        } @program;
+        # Store data
+        if (exists $channels{$channelid})
+        {
+          # Add programs from this grab to the list that already exists in the channel info we got before
+          push @{$programmes{$channelid}}, @program;
+        } 
+        else
+        {       
+          # Store channel info
+          $channels{$channelid} = $x;
+          $programmes{$channelid} = [ @program ];
+        }
+      }
+    }
+  }
+}
+
+# Start XMLTV file
+my $data = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<!DOCTYPE tv SYSTEM \"xmltv.dtd\">\n<tv>\n";
+# For each stored channel
+foreach my $ch (values(%channels))
+{
+	# Write channel tag
+	my $channelid = $ch->{channelid};
+	my $channeltitle = $ch->{title};
+	encode_entities($channeltitle);  
+	$data .= "  <channel id=\"$channelid.sky.com\">\n    <display-name>$channeltitle</display-name>\n  </channel>\n";
+}
+# For each stored channel
+foreach my $ch (values(%channels))
+{
+	my $channelid = $ch->{channelid};
+	# Write all programme tags
+	foreach my $prog (@{$programmes{$channelid}})
+	{
+		my $start = $prog->{start};
+		$start = substr($start,0,length($start)-3);  # Need to chop trailing 000 off the end
+		$start = DateTime->from_epoch(epoch => $start, time_zone => 'Europe/London');
+		my $end = $start->clone();
+		$end->add(seconds => $prog->{dur});
+		$start = $start->strftime("%Y%m%d%H%M%S %z");
+		$end = $end->strftime("%Y%m%d%H%M%S %z");
+		$data .= "  <programme start=\"$start\" stop=\"$end\" channel=\"$channelid.sky.com\">\n";
+		my $prog_title = $prog->{title};
+		encode_entities($prog_title);
+		$data .= "    <title lang=\"en\">$prog_title</title>\n";
+		my $prog_desc = $prog->{shortDesc};
+		encode_entities($prog_desc);
+		$data .= "    <desc lang=\"en\">$prog_desc</desc>\n";
+		$data .= "  </programme>\n";
+	}
+}
+# Finish XMLTV file
+$data .= '</tv>';
+# Write file to stdout
+print $data;
+exit 0;
+
+sub config_stage
+{
+     my( $stage, $conf ) = @_;
+
+     die "Unknown stage $stage" if $stage ne "start";
+
+     my $result;
+     my $writer = new XMLTV::Configure::Writer( OUTPUT => \$result, encoding => 'iso-8859-1' );
+
+     $writer->start( { grabber => 'tv_grab_uk_sky' } );
+     $writer->end( 'select-channels' );
+
+     return $result;
+}
+
+sub list_channels
+{
+     my( $conf, $opt ) = @_;
+     my $channel_list = '<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE tv SYSTEM "xmltv.dtd"><tv>';
+
+     # Load http://epgservices.sky.com/tvlistings-proxy/TVListingsProxy/init.json and convert to XML channel list
+     my $res = get( "http://epgservices.sky.com/tvlistings-proxy/TVListingsProxy/init.json" );
+     my $channel_data = JSON::XS->new->decode (decode "UTF-8", $res);
+
+     foreach my $channel (@{$channel_data->{channels}})
+     {
+        my $channelid = $channel->{channelid};
+        my $title = $channel->{title};
+        encode_entities($title);  
+        $channel_list .= "<channel id=\"$channelid\"><display-name>$title ($channel->{channelno})</display-name></channel>";
+     }
+
+     $channel_list .= '</tv>';
+     return $channel_list;
+}
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd ~/zap2xml
+rm ~/zap2xml/*.xml
+rm ~/zap2xml/cache/*
+export TZ=America/New_York
+~/zap2xml/zap2xml.pl -u username_us -p password_us -d 4 -o ~/zap2xml/directv.xml -A "new live" -U
+rm ~/zap2xml/cache/*
+~/zap2xml/zap2xml.pl -u username_can -p password_can -d 4 -o ~/zap2xml/bellfibetv.xml -A "new live" -U
+export TZ=UTC
+~/zap2xml/tv_grab_uk_sky --days 4 --output ~/zap2xml/uksky.xml --quiet
+mono WG2MP.exe ~/zap2xml/bellfibetv.xml ~/zap2xml/bellfibetvu.xml
+mono WG2MP.exe ~/zap2xml/directv.xml ~/zap2xml/directvu.xml
+
