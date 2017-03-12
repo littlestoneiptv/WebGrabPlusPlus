@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.1.1/53.16 -- Jan van Straaten" site="tvb.com">
-  <channels>
-    <channel update="i" site="tvb.com.pearl" site_id="P" xmltv_id="Pearl">TVB Pearl</channel>
-    <channel update="i" site="tvb.com.pearl" site_id="J" xmltv_id="TVB JADE">TVB Jade</channel>
-    <channel update="i" site="tvb.com.pearl" site_id="B" xmltv_id="TVB JADE 2">TVB J2</channel>
-    <channel update="i" site="tvb.com.pearl" site_id="A" xmltv_id="TVB JADE 5">TVB J5</channel>
-  </channels>
-</site>
