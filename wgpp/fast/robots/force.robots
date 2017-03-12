@@ -1,0 +1,4 @@
+User-agent: *
+Crawl-delay: 1
+Sitemap: http://www.tv.com/sitemap/sitemap.xml
+

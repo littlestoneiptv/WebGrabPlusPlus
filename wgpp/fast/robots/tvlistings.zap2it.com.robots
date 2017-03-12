@@ -1,0 +1,9 @@
+﻿User-Agent: *
+Disallow: /tvlistings/assets/
+Disallow: /javascript/
+Disallow: /*EPG*
+Disallow: /*SPG*
+Disallow: /*MVG*
+Disallow: /*SHG*
+Allow: /
+

@@ -1,0 +1,110 @@
+﻿# No data!
+# <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CNTV.cn_ERROR</title>
+<style type="text/css">
+<!--
+
+body, div, p, ul, ol, dl, dt, dd, li, form, input, table, img,
+h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+
+body{
+background:#fff none; color:#333; font-size:12px;  font-style:normal; font-weight:normal; font-family:verdana, "宋体";}
+em, b, i{font-style:normal;}
+
+p{
+line-height:1.25em;
+}
+
+a{color:#000; text-decoration:none;}
+a:link, a:visited{}
+a:hover, a:active{text-decoration: underline;}
+a.on:hover, a.cur:hover, .on a:hover, .cur a:hover{text-decoration:none;}
+
+.color_red, a.color_red, .color_red a{color: #f00;}
+.color_green, a.color_green, .color_green a{color: #0f0;}
+.color_blue, a.color_blue, .color_blue a{color: #00f;}
+.color_gray, a.color_gray, .color_gray a{color:#555;}
+
+.fs_14, .fs_14 a{font-size:14px;}
+.fs_12, .fs_12 a{font-size:12px;}
+
+.ff_eng, .ff_eng a{}
+.ff_ch, .ff_ch a{}
+
+img, a img{border:0 none;}
+
+ul, ol{list-style-type:none;}
+ul:after, ol:after{
+content:"."; display:block; clear:both; visibility:hidden;
+font-size:0px; line-height:0px; height:0;
+}
+
+.vspace{height:5px; font-size:0px; line-height:0px; width:99%; clear:both;}
+
+body .l, body .left{float:left; clear:none;}
+body .r, body .right{float:right; clear:none;}
+body .c, body .c{text-align:center;}
+
+
+
+.clear_float
+, .clear
+{clear: both; font-size:1px; line-height:1px; height:1px; overflow:hidden;}
+
+
+.error{ width:722px; height:306px; margin:0 auto; padding:146px 107px 33px 131px;}
+.error h3{ font:bold 23px/30px "微软雅黑"; color:#6b6b6b; padding-top:53px; margin-bottom:5px;}
+.error p{ font:16px/20px "微软雅黑"; color:#878787; margin-bottom:15px;}
+.error .btn{ width:186px; height:50px; background:url(http://p5.img.cctvpic.com/tv/css/v4/img/tiaozhuan.jpg) no-repeat; margin:0 auto;}
+.error .btn input.button{ border:none; background:none; padding:0px; margin:0px;width:186px; height:50px; cursor:pointer;}
+#page_body{ background:url(http://p5.img.cctvpic.com/tv/css/v4/img/page_body.jpg) repeat-x bottom #fefefe;}
+body{ background:#efefef;}
+-->
+</style>
+</head>
+<body id="bid">
+<!--登录条-->
+<!--页面-->
+<!--页头-->
+<!--页主体-->
+<div id="page_body">
+  <div class="column_wrapper lc_wo">
+      <div class="error">
+       <div class="mb_2col">
+         <div class="mb_col_1" style="width:362px; float:left;"><img src="http://p3.img.cctvpic.com/tv/images/v4/img131202_1.jpg" width="362" height="232" /></div>
+         <div class="mb_col_2" style="width:360px; float:left;">
+          <h3>您所访问的页面不存在或已删除！</h3>
+          <p>本页面<font id="time">3</font>秒之后将带您回到中国网络电视台首页。</p>
+          <div class="btn"><input name="" type="button" class="button" onclick="window.location.href='http://tv.cntv.cn/';" /></div>
+
+         </div>
+         <div class="clear"></div>
+       </div>
+      </div>
+    </div>
+</div>
+<script type="text/javascript">
+ function redirect(url, time) {
+     setTimeout("window.location='" + url + "'", time * 1000);
+  }
+  redirect('http://tv.cntv.cn/', 3);
+  var i=4;
+  function updateTime(){
+	 i=--i;
+	 document.getElementById("time").innerHTML=i;
+	 if(i==0){clearTimeout(timehadle)}else{
+		var timehadle = setTimeout("updateTime()", 1000);
+	 }
+  }
+  updateTime();
+</script>
+</body>
+</html>
+
+# Dummy robots-data created by WebGrab+Plus:
+
+User-agent: *
+Disallow:

@@ -1,0 +1,11 @@
+﻿# this-page-intentionally-left-blank.org
+
+User-agent: DittoSpyder
+User-agent: Googlebot-Image
+User-agent: ia_archiver
+User-agent: Mediapartners-Google*
+User-agent: vscooter
+Disallow: /
+
+User-agent: W3C-checklink
+Disallow:

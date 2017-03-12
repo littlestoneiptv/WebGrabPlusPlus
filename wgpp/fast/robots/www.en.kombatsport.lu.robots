@@ -1,0 +1,6 @@
+﻿User-agent: *
+Disallow: /app_stage.php
+Disallow: /app_stage.php/admin
+Disallow: /admin
+
+

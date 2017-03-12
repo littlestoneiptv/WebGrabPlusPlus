@@ -1,0 +1,8 @@
+#!/bin/bash
+cd ~/zap2xml
+~/zap2xml/grabuscanuk
+cd ~/wgpp
+cat ~/wgpp/fast/robots/force.robots > ~/wgpp/fast/robots/www.tv.com.robots
+mono WebGrab+Plus.exe "$(pwd)/fast"
+mono WG2MP.exe fast.xml merged2.xml
+gzip -c merged2.xml > iptvsubsepg.xml.gz

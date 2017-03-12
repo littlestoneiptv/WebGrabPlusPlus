@@ -1,0 +1,5 @@
+#  Hot_Cookies, saved for the purpose of an actual WebGrab run
+#  Saved by WG++ 14/12/2016
+
+www.en.kombatsport.lu	False	/	False	1481707678	mailplanBAK	R2555570994
+www.en.kombatsport.lu	False	/	False	1481707020	mailplan	R244387072
